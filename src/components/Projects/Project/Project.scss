@@ -1,0 +1,53 @@
+@import "../../../Styles/functions";
+@import "../../../Styles/mixins";
+.project {
+  font-family: Sharetechmono, sans-serif;
+
+  &__card {
+    width: 450px;
+    height: 300px;
+    // border: 2px solid #063ed8;
+    background-color: #f64740;
+    border-radius: 20px;
+    margin: 100px 0px;
+    position: relative;
+
+    @include smMaxBreakPoint {
+      border: 1px solid red;
+      width: 300px;
+      height: 250px;
+      margin: 50px 0;
+    }
+
+    &__content {
+      position: absolute;
+      width: 98%;
+      bottom: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 50px;
+
+      padding: 0.4em 1.5em;
+      font-size: 14px;
+      // background: #f2d7ee;
+      // background: rgba(255, 255, 255, 0.844);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      // transform: scale(0.9);
+      color: white;
+      border: 1px solid rgba(185, 13, 13, 0.164);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      transition-timing-function: cubic-bezier(0.6, 0.4, 0, 1);
+
+      p {
+        font-size: 0.8em;
+      }
+    }
+
+    &:hover > .project__card__content {
+      height: 90%;
+    }
+  }
+}

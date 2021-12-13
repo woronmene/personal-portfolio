@@ -1,0 +1,42 @@
+// Screen sizes
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1300px;
+$screen-full: 1400px;
+
+// Colors
+// dark
+$bg-header-dark: #111317;
+$bg-body-dark: #090a0c;
+$navbar-dark: #111317;
+$navbar-border-dark: rgba(
+  $color: #4e4d4d,
+  $alpha: 0.4,
+);
+
+$text-link-dark: #fff;
+$text-header-dark: #fff;
+$text-heading-dark: rgba(255, 255, 255, 0.088);
+
+// light
+$bg-header-light: #fff;
+$bg-body-light: #f7f6f9;
+$navbar-light: #fff;
+$navbar-border-light: rgba(
+  $color: #4e4d4d,
+  $alpha: 0.4,
+);
+
+$text-link-light: #000;
+$text-header-light: #000;
+$text-heading-light: rgba(0, 0, 0, 0.088);
+
+// spacing
+
+$navbar-height: 40px;
+
+// font sizes
+// font sizes do not have units (e.g px, rem, em) because the toRem function takes a number in pixels and converts it to rem.
+$link-text-size: 13;

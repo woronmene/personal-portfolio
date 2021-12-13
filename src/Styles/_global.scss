@@ -1,0 +1,40 @@
+@import "./mixins";
+@import "./functions";
+
+.global__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  // border: 2px solid red;
+  @include smMaxBreakPoint {
+    padding: 0 10px;
+  }
+}
+
+.global__mainText {
+  font-size: 44px;
+
+  @include mdMaxBreakPoint {
+    font-size: 34px;
+    line-height: 3rem;
+  }
+}
+.global__heading {
+  font-size: 180px;
+  @include lgMaxBreakPoint {
+    font-size: 130px;
+  }
+  @include smMaxBreakPoint {
+    font-size: 90px;
+  }
+}
+
+.global__yellow {
+  background-color: #faed8f;
+}
+.global__pink {
+  background-color: #fc78ce;
+}
+.global__green {
+  background-color: #69f595;
+}

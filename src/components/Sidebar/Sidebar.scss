@@ -1,0 +1,31 @@
+@import "../../Styles/functions";
+@import "../../Styles/mixins";
+.sidebar {
+  position: fixed;
+  width: $navbar-height;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border: 1px solid $navbar-border-dark;
+
+  @include smMaxBreakPoint {
+    display: none;
+  }
+  //   @include themify() {
+  //     background-color: themed("navbar-color");
+  //   }
+  @include flex-center;
+  //   flex-direction: column;
+  .social-icons {
+    height: 120px;
+    @include flex-around;
+    flex-direction: column;
+    // border: 1px solid red;
+    color: white;
+
+    .icon {
+      //   border: 1px solid green;
+    }
+  }
+}

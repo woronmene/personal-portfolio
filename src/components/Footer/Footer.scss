@@ -1,0 +1,11 @@
+@import "../../Styles/functions";
+@import "../../Styles/mixins";
+.footer {
+  height: $navbar-height;
+  @include themify() {
+    background-color: themed("navbar-color");
+  }
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+@import "./themes";
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

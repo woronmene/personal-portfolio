@@ -1,0 +1,27 @@
+@import "./mixins";
+@import "./functions";
+@import "./typography";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: GTWalsheim, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  @include themify() {
+    background-color: themed("bg-body");
+  }
+  box-sizing: border-box;
+  height: 100vh;
+  min-height: 100%;
+}
+
+#root {
+  height: 100%;
+}

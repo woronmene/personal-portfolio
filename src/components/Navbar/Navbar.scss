@@ -1,0 +1,55 @@
+@import "../../Styles/functions";
+@import "../../Styles/mixins";
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  height: $navbar-height;
+  font-family: Sharetechmono, sans-serif;
+  @include themify() {
+    background-color: themed("navbar-color");
+  }
+  top: 0;
+  left: 0;
+  @include flex-center;
+  border-bottom: 1px solid $navbar-border-dark;
+  // &:hover {
+  //   padding-bottom: 50px;
+  // }
+  &__wrapper {
+    width: 95%;
+
+    @include flex-between;
+  }
+
+  // &__logo {
+  //   font-size: toRem(20);
+  //   color: $link-text-color;
+  // }
+
+  .navbar__themes {
+    width: 80px;
+    @include flex-between;
+
+    .navbar__theme {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+  }
+
+  &__links {
+    width: 120px;
+    // border: 1px solid pink;
+
+    @include flex-between;
+  }
+  &__link {
+    @include themify() {
+      color: themed("text-link");
+    }
+    font-size: toRem($link-text-size);
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

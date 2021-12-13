@@ -1,0 +1,30 @@
+@import "../../Styles/mixins";
+
+@import "../../Styles/functions";
+
+.projects {
+  position: relative;
+  @include themify() {
+    background-color: themed("bg-body");
+  }
+  min-height: 100vh;
+  padding-top: 180px;
+  border-bottom: 1px solid $navbar-border-dark;
+
+  &__content {
+    width: 100%;
+    // border: 2px solid gray;
+
+    @include flex-around;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    position: absolute;
+    // border: 1px solid red;
+    top: 30px;
+    @include themify() {
+      color: themed("text-heading");
+    }
+  }
+}
