@@ -10,11 +10,8 @@ function Project() {
         <div className="project">
             <motion.div className="project__card"  whileHover={{ scale: 1.1}}          >
                 <div className="project__card__content">
-                    <h2>Heading</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Perspiciatis maxime consectetur illo totam.
-                         Cumque illum dignissimos quaerat adipisci,
-                          sapiente necessitatibus?</p>
+                    <h2>Color Skima</h2>
+                    
                 </div>
             </motion.div>
     
