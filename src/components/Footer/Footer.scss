@@ -20,6 +20,8 @@
 
     .resume {
       // border: 1px solid green;
+      width: 120px;
+
       @include flex-center;
       &__link {
         @include themify() {
