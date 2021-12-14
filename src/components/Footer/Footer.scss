@@ -22,7 +22,8 @@
       // border: 1px solid green;
       width: 120px;
 
-      @include flex-center;
+      @include flex-start;
+      flex-direction: column;
       &__link {
         @include themify() {
           color: themed("text-link");
