@@ -5,7 +5,50 @@
   @include themify() {
     background-color: themed("navbar-color");
   }
+  @include flex-center;
+
   z-index: 2;
   position: absolute;
   width: 100%;
+
+  &__wrapper {
+    width: 95%;
+    height: 100%;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+
+    .resume {
+      // border: 1px solid green;
+      @include flex-center;
+      &__link {
+        @include themify() {
+          color: themed("text-link");
+        }
+        font-size: toRem($link-text-size);
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+
+    .credits {
+      @include flex-center;
+      @include themify() {
+        color: themed("text-link");
+      }
+      font-size: toRem($link-text-size);
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .social-icons {
+      width: 120px;
+      @include flex-around;
+      // flex-direction: column;
+      // border: 1px solid red;
+      color: white;
+    }
+  }
 }

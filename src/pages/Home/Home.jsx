@@ -6,8 +6,8 @@ function Home() {
         <div>
             
                 <Header/>
-                <Projects/>
-                <Projects/>
+                <Projects title="Projects"/>
+                <Projects title="Articles"/>
             
         </div>
     )

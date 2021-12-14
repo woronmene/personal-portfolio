@@ -1,8 +1,7 @@
 import "./Sidebar.scss";
-import {AiFillGithub, AiFillGitlab} from "react-icons/ai"
+import {AiFillGithub, AiFillGitlab, AiFillLinkedin} from "react-icons/ai"
 import { motion } from "framer-motion";
 
-import {AiFillLinkedin} from "react-icons/ai"
 function Sidebar() {
     return (
         <motion.div className="sidebar"
