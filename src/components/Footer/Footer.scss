@@ -20,7 +20,7 @@
 
     .resume {
       // border: 1px solid green;
-      width: 120px;
+      width: 110px;
 
       @include flex-start;
       flex-direction: column;
@@ -36,7 +36,9 @@
     }
 
     .credits {
-      @include flex-center;
+      width: 110px;
+      @include flex-start;
+      flex-direction: column;
       @include themify() {
         color: themed("text-link");
       }
@@ -44,10 +46,11 @@
       font-weight: bold;
       text-decoration: none;
       cursor: pointer;
+      // border: 1px solid yellowgreen;
     }
 
     .social-icons {
-      width: 120px;
+      width: 110px;
       @include flex-around;
       // flex-direction: column;
       // border: 1px solid red;
