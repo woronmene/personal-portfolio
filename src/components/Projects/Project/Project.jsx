@@ -27,10 +27,10 @@ function Project() {
                     </div>
                    
                     <div className="project__card__content__links">
-                        <a className="github-link">
+                        <a className="github-link" href="/">
                             <RiGithubLine size="22"/>
                         </a>
-                        <a className="deployed-link">
+                        <a className="deployed-link" href="/">
                             <HiOutlineExternalLink size="22"/>
                         </a>
                     </div>
