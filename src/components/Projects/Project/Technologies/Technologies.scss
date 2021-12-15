@@ -1,0 +1,10 @@
+.technologies {
+  display: flex;
+  &__text {
+    font-size: 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.348);
+    padding: 3px 4px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+}
