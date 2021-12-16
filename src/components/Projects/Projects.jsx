@@ -8,11 +8,11 @@ function Projects({title}) {
 
 
                <h1 className="projects__text global__heading">{title}</h1>
-           <Project/>
-           <Project/>
-           <Project/>
-           <Project/>
-           <Project/>
+           <Project status= {true}/>
+           <Project status= {false}/>
+           <Project status= {true}/>
+           <Project status= {false}/>
+           <Project status= {true}/>
           
   
             </div>

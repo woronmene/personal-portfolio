@@ -22,6 +22,12 @@
       margin: 50px 0;
     }
 
+    .project__card__content.active-content {
+      @include smMaxBreakPoint {
+        height: 90%;
+      }
+    }
+
     &__content {
       position: absolute;
       width: 98%;
@@ -76,11 +82,17 @@
       }
     }
 
-    &:hover > .project__card__content {
-      height: 90%;
-    }
+    // &:hover > .project__card__content {
+    //   height: 90%;
+    //   @include smMaxBreakPoint {
+    //     height: 50px;
+    //   }
+    // }
     &:hover .project__card__content__title {
       margin-bottom: 0px;
+      @include smMaxBreakPoint {
+        margin-bottom: 30px;
+      }
     }
   }
 }
