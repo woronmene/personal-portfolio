@@ -40,7 +40,7 @@ const [showCardContent, setShowCardContent] = useState(false);
 
     return (
         <div className="project">
-            <motion.div className="project__card" variants={mainCardVariant} initial="rest"  whileHover="hover" whileTap={()=>{
+            <motion.div className="project__card" variants={mainCardVariant} initial="rest"  whileHover="hover" onClick={()=>{
                 setShowCardContent(!showCardContent)
             }}     >
                 <motion.div className={`project__card__content ${showCardContent? 'active-content':''}`} variants={cardContentVariant}>
