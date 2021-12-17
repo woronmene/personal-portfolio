@@ -7,7 +7,7 @@ function Projects({title}) {
             <div className="projects__content global__container">
 
 
-               <h1 className="projects__text global__heading">{title}</h1>
+               <h1 className=" global__heading">{title}</h1>
            <Project status= {true}/>
            <Project status= {false}/>
            <Project status= {true}/>

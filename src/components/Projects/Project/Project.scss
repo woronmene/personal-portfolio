@@ -6,8 +6,6 @@
   &__card {
     width: 450px;
     height: 300px;
-    // border: 2px solid #063ed8;
-    // background-color: #f64740;
     background: url("https://gedalyakrycer.com/assets/images/img-links/portfolio/Card/driverkick-thumbnail.jpg");
     background-position: center;
     background-size: cover;
@@ -23,7 +21,7 @@
     }
 
     .project__card__content.active-content {
-      @include smMaxBreakPoint {
+      @include customMaxBreakPoint(1024) {
         height: 90%;
       }
     }
@@ -38,14 +36,10 @@
       border-radius: 10px;
       padding: 0.4em 1.5em;
       font-size: 14px;
-      // background: #f2d7ee;
       background: rgba(0, 0, 0, 0.436);
       backdrop-filter: blur(10px);
       border-radius: 10px;
-      // transform: scale(0.9);
       color: white;
-      border: 1px solid rgba(185, 13, 13, 0.164);
-      // border: 1px solid black;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
       overflow: hidden;
       transition: all 0.3s ease-in-out;
@@ -53,10 +47,16 @@
       @include flex-between;
       flex-direction: column;
 
+      // .close-icon {
+      //   position: absolute;
+      //   top: 4%;
+      //   right: 4%;
+      //   z-index: 100;
+      // }
+
       &__title {
         font-size: 1.5rem;
         margin-bottom: 30px;
-        // border: 1px solid yellow;
       }
       &__description {
         // border: 1px solid black;
@@ -64,7 +64,6 @@
 
       &__technologies {
         width: 100%;
-        // border: 1px solid black;
         display: flex;
         flex-wrap: wrap;
       }
@@ -73,8 +72,7 @@
         width: 100%;
         @include flex-between;
 
-        .github-link,
-        .deployed-link {
+        .card-link {
           padding: 5px 10px;
           cursor: pointer;
           color: white;
@@ -88,11 +86,11 @@
     //     height: 50px;
     //   }
     // }
-    &:hover .project__card__content__title {
-      margin-bottom: 0px;
-      @include smMaxBreakPoint {
-        margin-bottom: 30px;
-      }
-    }
+    // &:hover .project__card__content__title {
+    //   margin-bottom: 0px;
+    //   @include smMaxBreakPoint {
+    //     margin-bottom: 30px;
+    //   }
+    // }
   }
 }

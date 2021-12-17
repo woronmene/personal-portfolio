@@ -15,7 +15,7 @@ function Sidebar() {
            
         }}>
             <div className="social-icons">
-                <AiFillGithub className="icon" size="22"/>
+                <AiFillGithub className="icon" size="22" alt="Github"/>
                 <AiFillLinkedin className="icon" size="22"/>
                 <AiFillGitlab className="icon" size="22"/>
             </div>

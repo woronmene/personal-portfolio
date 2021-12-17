@@ -1,12 +1,13 @@
-import {useState} from "react";
 import "./Project.scss";
+import {useState} from "react";
 import {motion} from "framer-motion";
 import Technologies from "./Technologies/Technologies";
 import {RiGithubLine} from "react-icons/ri";
 import {HiOutlineExternalLink} from "react-icons/hi";
+// import {AiOutlineClose} from "react-icons/ai";
 
 
-
+// framermotion variants for the hover effect on card
 const mainCardVariant ={
     rest:{
         scale: 1
@@ -20,9 +21,6 @@ const cardContentVariant= {
     rest: {},
     hover: {
         height: '90%'
-    },
-    tap: {
-        height: '90%'
     }
 };
 
@@ -31,12 +29,6 @@ const cardContentVariant= {
 function Project({status}) {
 const [showCardContent, setShowCardContent] = useState(false);
 
-// const showContent = ()=>{
-//     setShowCardContent(!showCardContent);
-//     console.log(showCardContent);
-
-// }
-//  
 
     return (
         <div className="project">
@@ -44,6 +36,10 @@ const [showCardContent, setShowCardContent] = useState(false);
                 setShowCardContent(!showCardContent)
             }}     >
                 <motion.div className={`project__card__content ${showCardContent? 'active-content':''}`} variants={cardContentVariant}>
+                    {/* {showCardContent && <AiOutlineClose size="22" className="close-icon" color="white" onClick={()=>{
+                        setShowCardContent(false)
+                        console.log(showCardContent)
+                    }}/>} */}
                     <h2 className="project__card__content__title">Skimma</h2>
                     <p className="project__card__content__description">A design tool for designers and developers to easily and quickly
                      create color schemes based on their color preference</p>
@@ -58,10 +54,10 @@ const [showCardContent, setShowCardContent] = useState(false);
                     </div>
                    
                     <div className="project__card__content__links">
-                        <a className="github-link" href="/">
+                        <a className="card-link" href="/">
                             <RiGithubLine size="22"/>
                         </a>
-                        <a className="deployed-link" href="/">
+                        <a className="card-link" href="/">
                             <HiOutlineExternalLink size="22"/>
                         </a>
                     </div>

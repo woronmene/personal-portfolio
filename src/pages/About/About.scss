@@ -1,0 +1,55 @@
+@import "../../Styles/mixins";
+
+@import "../../Styles/functions";
+
+.about {
+  position: relative;
+  @include themify() {
+    background-color: themed("bg-body");
+  }
+  min-height: 100vh;
+  padding-top: 180px;
+  border-bottom: 1px solid $navbar-border-dark;
+  //   border: 3px solid red;
+
+  &__content {
+    width: 100%;
+    // border: 2px solid gray;
+    @include flex-center;
+
+    .about-par {
+      margin: 100px 0;
+
+      @include xlMaxBreakPoint {
+        margin: 100px 50px;
+        // border: 1px solid red;
+      }
+      @include smMaxBreakPoint {
+        margin: 50px 5px;
+      }
+    }
+
+    h2 {
+      color: white;
+      font-size: toRem(43);
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+
+    p {
+      width: 60%;
+      color: white;
+      font-size: toRem(21);
+      line-height: 2rem;
+      margin-bottom: 30px;
+
+      @include lgMaxBreakPoint {
+        width: 80%;
+      }
+
+      @include smMaxBreakPoint {
+        width: 100%;
+      }
+    }
+  }
+}

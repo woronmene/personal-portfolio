@@ -20,11 +20,5 @@
   }
 
   &__text {
-    position: absolute;
-    // border: 1px solid red;
-    top: 30px;
-    @include themify() {
-      color: themed("text-heading");
-    }
   }
 }
