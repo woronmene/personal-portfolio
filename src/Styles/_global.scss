@@ -12,10 +12,10 @@
 }
 
 .global__mainText {
-  font-size: 44px;
+  font-size: 54px;
 
   @include xlMaxBreakPoint {
-    font-size: 38px;
+    font-size: 40px;
     line-height: 3rem;
   }
 
