@@ -32,11 +32,15 @@
       @include flex-center;
 
       @include xlMaxBreakPoint {
-        // width: 80%;
+        width: 80%;
+        padding: 20px;
+      }
+      @include xlMaxBreakPoint {
+        width: 90%;
         padding: 20px;
       }
       @include smMaxBreakPoint {
-        // width: 100%;
+        width: 100%;
         padding: 0px;
       }
     }
