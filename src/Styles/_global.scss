@@ -11,6 +11,12 @@
   }
 }
 
+.global__wrapper {
+  width: 95%;
+  height: 100%;
+  @include flex-between;
+}
+
 .global__mainText {
   font-family: GTWalsheim Bold, sans-serif;
   font-size: 54px;

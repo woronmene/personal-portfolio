@@ -12,18 +12,15 @@ function Navbar() {
             duration: .7,
            
         }}>
-           <div className="navbar__wrapper">
+           <div className="global__wrapper">
                {/* navbar left */}
                
 
-               {/* navbar center */}
                <div className="navbar__links">
                    <p><Link to="/"  className="navbar__link">Home</Link></p>
                    <p ><Link to="/about" className="navbar__link">About</Link></p>
                </div>
-               {/* <div className="logo">
-                   <h1 className='navbar__logo'>Woron</h1>
-               </div> */}
+            
 
                {/* navbar right */}
 

@@ -1,4 +1,4 @@
-import Project from "./Project/Project";
+import ProjectCard from "./ProjectCard/ProjectCard";
 import "./Projects.scss";
 
 function Projects({title}) {
@@ -8,11 +8,10 @@ function Projects({title}) {
 
 
                <h1 className=" global__heading">{title}</h1>
-           <Project status= {true}/>
-           <Project status= {false}/>
-           <Project status= {true}/>
-           <Project status= {false}/>
-           <Project status= {true}/>
+           <ProjectCard />
+           <ProjectCard />
+           <ProjectCard />
+           <ProjectCard />
           
   
             </div>

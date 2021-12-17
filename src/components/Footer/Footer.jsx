@@ -4,19 +4,19 @@ import {AiFillGithub, AiFillGitlab, AiFillLinkedin} from "react-icons/ai"
 function Footer() {
     return (
         <div className="footer">
-           <div className="footer__wrapper">
+           <div className="global__wrapper">
                {/* footer left */}
-               <div className="resume">
-                    <p className="resume__link"> Resume</p>
+               <div className="footer__resume">
+                    <p className="footer__resume__link"> Resume</p>
                </div>
 
                {/* footer center */}
-               <div className="credits">
+               <div className="footer__credits">
                     <p>Made by Woron</p>
                </div>
 
                {/* footer right */}
-               <div className="social-icons">
+               <div className="footer__social-icons">
                <AiFillGithub className="icon" size="22"/>
                 <AiFillLinkedin className="icon" size="22"/>
                 <AiFillGitlab className="icon" size="22"/>

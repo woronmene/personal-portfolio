@@ -14,10 +14,10 @@ function Sidebar() {
            
            
         }}>
-            <div className="social-icons">
-                <AiFillGithub className="icon" size="22" alt="Github"/>
-                <AiFillLinkedin className="icon" size="22"/>
-                <AiFillGitlab className="icon" size="22"/>
+            <div className="sidebar__social-icons">
+                <AiFillGithub size="22" alt="Github"/>
+                <AiFillLinkedin size="22"/>
+                <AiFillGitlab size="22"/>
             </div>
         </motion.div>
     )

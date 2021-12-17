@@ -11,34 +11,13 @@
   position: absolute;
   width: 100%;
 
-  &__wrapper {
-    width: 95%;
-    height: 100%;
-    // border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
+  &__resume {
+    // border: 1px solid green;
+    width: 110px;
 
-    .resume {
-      // border: 1px solid green;
-      width: 110px;
-
-      @include flex-start;
-      flex-direction: column;
-      &__link {
-        @include themify() {
-          color: themed("text-link");
-        }
-        font-size: toRem($link-text-size);
-        font-weight: bold;
-        text-decoration: none;
-        cursor: pointer;
-      }
-    }
-
-    .credits {
-      width: 110px;
-      @include flex-start;
-      flex-direction: column;
+    @include flex-start;
+    flex-direction: column;
+    &__link {
       @include themify() {
         color: themed("text-link");
       }
@@ -46,15 +25,28 @@
       font-weight: bold;
       text-decoration: none;
       cursor: pointer;
-      // border: 1px solid yellowgreen;
     }
+  }
 
-    .social-icons {
-      width: 110px;
-      @include flex-around;
-      // flex-direction: column;
-      // border: 1px solid red;
-      color: white;
+  &__credits {
+    width: 110px;
+    @include flex-start;
+    flex-direction: column;
+    @include themify() {
+      color: themed("text-link");
     }
+    font-size: toRem($link-text-size);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    // border: 1px solid yellowgreen;
+  }
+
+  &__social-icons {
+    width: 110px;
+    @include flex-around;
+    // flex-direction: column;
+    // border: 1px solid red;
+    color: white;
   }
 }

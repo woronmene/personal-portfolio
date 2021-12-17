@@ -13,34 +13,9 @@
   left: 0;
   @include flex-center;
   border-bottom: 1px solid $navbar-border-dark;
-  // &:hover {
-  //   padding-bottom: 50px;
-  // }
-  &__wrapper {
-    width: 95%;
-
-    @include flex-between;
-  }
-
-  // &__logo {
-  //   font-size: toRem(20);
-  //   color: $link-text-color;
-  // }
-
-  .navbar__themes {
-    width: 80px;
-    @include flex-between;
-
-    .navbar__theme {
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-    }
-  }
 
   &__links {
     width: 120px;
-    // border: 1px solid pink;
 
     @include flex-between;
   }
@@ -51,5 +26,16 @@
     font-size: toRem($link-text-size);
     font-weight: bold;
     text-decoration: none;
+  }
+
+  .navbar__themes {
+    width: 80px;
+    @include flex-between;
+
+    .navbar__theme {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
   }
 }
