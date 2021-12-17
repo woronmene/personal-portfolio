@@ -18,9 +18,16 @@
   font-weight: bold;
 }
 @font-face {
+  font-family: GTWalsheim Md;
+  src: url("../assets/fonts/GTWalsheimPro-Medium.woff2") format("woff2"),
+    url("../assets/fonts/GTWalsheimPro-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
   font-family: GTWalsheim Bold;
-  src: url("../assets/fonts/GTWalsheimPro-UltraBold.woff2") format("woff2"),
-    url("../assets/fonts/GTWalsheimPro-UltraBold.woff") format("woff");
+  src: url("../assets/fonts/GTWalsheimPro-Bold.woff2") format("woff2"),
+    url("../assets/fonts/GTWalsheimPro-Bold.woff") format("woff");
   font-style: normal;
   font-weight: bold;
 }
@@ -39,7 +46,7 @@
 //   line-height: 1.2em;
 //   color: $link-text;
 //   margin: 0;
-// }C:\Users\Woron\Desktop\Projects\personal-portfolio\portfolio-website\src\assets\fonts\GTWalsheimPro-UltraBold.woff
+// }C:\Users\Woron\Desktop\Projects\personal-portfolio\portfolio-website\src\assets\fonts\GTWalsheimPro-Medium.woff
 
 // h1 {
 //   font-style: normal;
