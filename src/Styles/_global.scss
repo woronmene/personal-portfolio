@@ -20,7 +20,11 @@
     line-height: 3rem;
   }
 
-  @include mdMaxBreakPoint {
+  // @include mdMaxBreakPoint {
+  //   font-size: 34px;
+  //   line-height: 3rem;
+  // }
+  @include smMaxBreakPoint {
     font-size: 34px;
     line-height: 3rem;
   }
